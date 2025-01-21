@@ -2,6 +2,7 @@ import { LowArray } from "./array.js"
 import { SortArray } from "./sort_array.js"
 import { BubbleSort } from "./bubble_sort.js"
 import { SelectionSort } from "./selection_sort.js"
+import { InsertSort } from "./insert_sort.js"
 
 // const arr = new LowArray([1,2,3])
 // arr.show()
@@ -51,3 +52,15 @@ selection.add(-4);
 selection.show();
 selection.sort()
 selection.show();
+
+// Insert sort
+const insert = new InsertSort();
+insert.add(0);
+insert.add(123124);
+insert.add(99);
+insert.add(1);
+insert.add(-52);
+insert.add(-4);
+insert.show();
+insert.sort()
+insert.show();
