@@ -1,5 +1,6 @@
 import { LowArray } from "./array.js"
 import { SortArray } from "./sort_array.js"
+import { BubbleSort } from "./bubble_sort.js"
 
 // const arr = new LowArray([1,2,3])
 // arr.show()
@@ -22,3 +23,18 @@ sortArray.delete(1)
 sortArray.delete(3)
 sortArray.delete(3)
 sortArray.show()
+
+// Bubble sort
+console.log("Bubble sort")
+const buble = new BubbleSort();
+buble.add(1)
+buble.add(-2)
+buble.add(-2)
+buble.add(-2)
+buble.add(0)
+buble.add(5)
+buble.add(99)
+
+buble.show()
+buble.sort()
+buble.show()
