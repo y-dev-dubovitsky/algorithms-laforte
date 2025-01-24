@@ -3,6 +3,7 @@ import { SortArray } from './simle-sort/sort_array.js';
 import { BubbleSort } from './simle-sort/bubble_sort.js';
 import { SelectionSort } from './simle-sort/selection_sort.js';
 import { InsertSort } from './simle-sort/insert_sort.js';
+import { Reverse } from './stack-queue/reverse.js';
 
 class SimpleSort {
   showAll() {
@@ -70,3 +71,12 @@ class SimpleSort {
 }
 
 new SimpleSort().showAll()
+
+class StackQueue {
+  show() {
+    const reverse = new Reverse();
+    console.log(reverse.reverse('hello world'));
+  }
+}
+
+new StackQueue().show()
