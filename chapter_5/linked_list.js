@@ -15,9 +15,39 @@ export default class LinkedList {
     return tmp;
   }
 
+  find(value) {
+    let current = this.first;
+    while (current != null) {
+      if (current.value == value) {
+        return value;
+      } else {
+        current = current.next;
+      }
+    }
+  }
+
+  delete(value) {
+    let current = this.first;
+    let previous = this.first;
+    while (current.value != value) {
+      if (current.next == null) {
+        return null;
+      } else {
+        previous = current;
+        current = current.next;
+      }
+    }
+    if (current == this.first) {
+      this.first = this.first.next;
+    } else {
+      previous.next = current.next;
+    }
+    return current;
+  }
+
   display() {
     let current = this.first;
-    while(current != null) {
+    while (current != null) {
       console.log(current);
       current = current.next;
     }
